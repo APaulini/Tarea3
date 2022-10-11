@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(to left, #ecdca8, #ddd6bf, #e0dbd1, #fcfaf6, #a58049);
+  padding-bottom: 1rem;
+}
+
+.container {
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width:100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+  background: #000000;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+
+.card__body {
+  font-size: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #ceb7f3;
+background: linear-gradient(to bottom, #895aa5, #cabbd6);
+  color: #fafafa;
+}
+
+
+.card__body h4 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  text-transform: uppercase;
+}
+
+.card__body p {
+  text-transform: uppercase;
+}
+
+.card__footer {
+ font-family: 'Abel', sans-serif;
+ text-align: inherit ;
+ padding: 1rem;
+ padding-top: 0.5em;
+ margin-top: 0.5rem;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  width: 17%;
+  border-radius: 50%;
+  }
+
+.user__info > small {
+  color: #666;
+}
